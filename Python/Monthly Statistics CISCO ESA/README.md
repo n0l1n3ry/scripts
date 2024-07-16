@@ -6,4 +6,4 @@ This Python script extracts some statistics into an Excel workbook for the last 
 - Incoming Total safe recipients
 - Outgoing Total delivered recipients
 
-This script create a sheet for each month.
+This script creates a new sheet for each month.
