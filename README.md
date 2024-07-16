@@ -92,8 +92,8 @@ $ gpg --delete-secret-keys <ID> # Delete a secret key
 You can test your script by execute it to your terminal and observe the output.
 
 ```bash
-$ chmod +x /Scripts/encryptedRemoteBackup.sh
-$ /Scripts/encryptedRemoteBackup.sh
+$ chmod +x encryptedRemoteBackup.sh
+$ ./encryptedRemoteBackup.sh
 ```
 
 You can periodically execute this script by using a cron
@@ -101,5 +101,5 @@ You can periodically execute this script by using a cron
 ```bash
 $ crontab -l
 # m h  dom mon dow   command
-00 22 1-7 * * /Scripts/encryptedRemoteBackup.sh
+00 22 1-7 * * <YOUR PATH>/encryptedRemoteBackup.sh
 ```
