@@ -1,6 +1,8 @@
 # Encrypted Backup Folder
 
-This Bash script backups a specific folder to an encreypted archive TAR and upload this in a remote server by SSH.
+This Bash script backups a specific folder to an encrypted archive TAR and upload this to a remote server by SSH.  
+It backups a different folder depending a day of week.
+
 
 All you need is to generate a GPG keys pair.  
 The script will use only the public key.
