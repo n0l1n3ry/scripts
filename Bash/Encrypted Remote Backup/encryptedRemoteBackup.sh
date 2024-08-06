@@ -40,7 +40,7 @@ create_archive(){
 }
 
 upload(){
-  [[ $(rsync -e 'ssh -p ${backup_server_port}' -avz ${temp_dir}/${output_file} ${backup_server}:${target_directory}) ]] && msg="Upload de l'archive chiffrée: OK\n" ||  { msg="Une erreur est survenue lors de l'upload\nVeuillez vérifier les logs\nInterruption du script"; suppress_archive; send_mail; exit 1; }
+  [[ $(rsync -e "ssh -p ${backup_server_port}" -avz ${temp_dir}/${output_file} ${backup_server}:${target_directory}) ]] && msg="Upload de l'archive chiffrée: OK\n" ||  { msg="Une erreur est survenue lors de l'upload\nVeuillez vérifier les logs\nInterruption du script"; suppress_archive; send_mail; exit 1; }
 }
 
 compare_sha256(){
